@@ -27,6 +27,20 @@ header#siteheader,footer#sitefooter{
 	padding:.5em;
 }
 
+aside#premiumMembershipInfo{
+	position:fixed;
+	top:0;
+	right:0;
+	width:20%;
+	display:block;
+	background:#272822;
+	padding:1em;
+}
+
+section.post{
+	width:60%;
+}
+
 header.article{
 	/*Article headers*/
 }
