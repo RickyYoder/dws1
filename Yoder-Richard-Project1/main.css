@@ -30,7 +30,7 @@ header#siteheader,footer#sitefooter{
 aside#premiumMembershipInfo{
 	position:fixed;
 	top:0;
-	right:0;
+	right:4em;
 	width:20%;
 	display:block;
 	background:#272822;
@@ -38,7 +38,10 @@ aside#premiumMembershipInfo{
 }
 
 section.post{
+	margin-top:2em;
 	width:60%;
+	background:#383933;
+	padding:.5em;
 }
 
 header.article{
@@ -51,6 +54,10 @@ footer.article{
 
 footer{
 	margin-top:1em;
+}
+
+article img{
+	max-width:100%;
 }
 
 #logo{
@@ -66,6 +73,10 @@ nav{
 	width:79%;
 }
 
+nav a{
+	margin-right:1.5em;
+}
+
 article{
 
 }
@@ -73,8 +84,7 @@ article{
 a{
 	text-decoration:none;
 	color:#A6E22E;
-	margin:0 1.5em 0 0;
-	padding-bottom:2px;
+	padding-bottom:1px;
 	display:inline-block;
 	margin-bottom:4px;
 	border-bottom:2px solid transparent;
