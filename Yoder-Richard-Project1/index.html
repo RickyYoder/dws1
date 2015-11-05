@@ -10,13 +10,17 @@
 		<header id="siteheader">
 			<span id="logo">&lt; /&gt; Coding</span>
 			<nav>
-				<a href="#">Homepage</a>
-				<a href="#">HTML</a>
-				<a href="#">CSS</a>
-				<a href="#">JavaScript</a>
-				<a href="#">PHP</a>
-				<a href="#">SQL</a>
-				<a href="#">Contact</a>
+				<!--Fix for Project 1: all navigation links are now in a bulleted list-->
+				<ul>
+					<li><a href="#">Homepage</a></li>
+					<li><a href="#">HTML</a></li>
+					<li><a href="#">CSS</a></li>
+					<li><a href="#">JavaScript</a></li>
+					<li><a href="#">PHP</a></li>
+					<li><a href="#">SQL</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#sitefooter">Sitemap</a></li>
+				</ul>
 			</nav>
 		</header>
 
@@ -25,12 +29,14 @@
 			<h3><a href="#">Only $5 a month</a></h3>
 		</aside>
 
-		<section class="post">
-			<header>
-				<h1>Why Chrome Apps Could Be The Next Frontier</h1>
-				<p>by Site Admin (10/29/2015)</p>
-			</header>
+		<section id="articles">
+			<!--Note for instructor: <header> is okay to be inside <article>, and <article> is okay to be inside <header>. <section> defines a section of page content. <article> can be inside section. StackOverflow Post: http://goo.gl/FCwD21-->
 			<article>
+				<header>
+					<!--Note for instructor: an <h1> was inside a <header> already.-->
+					<h1>Why Chrome Apps Could Be The Next Frontier</h1>
+					<p>by Site Admin (10/29/2015)</p>
+				</header>
 				<p>Let's face it. We all love Google Chrome. No? Okay okay fine. <a href="http://venturebeat.com/2015/05/01/chrome-passes-25-market-share-ie-and-firefox-slip/">At least 25% of us love Google Chrome</a>. It's a great browser with a lot of features such as browser extensions, intricate settings, and the ability to sync our history, tabs, and other browsing data on all of our devices. Not to mention Chrome's availability on nearly all platforms: Windows, Mac, Linux, Android, and iOS. Between fast browsing, great features, and it's ubuquity, Chrome has become a staple for web browsers worldwide. And in the development world, it's no different.</p>
 				<p>When testing the latest and greatest browsing features, users are always encouraged to use Chrome. That's because it scores the highest on <a href="http://html5test.com">HTML5Test.com</a>.</p>
 
@@ -52,20 +58,22 @@
 				</ol>
 
 				<figure>
-				<a href="images/notepad.webp"><img src="images/notepad.webp" alt="HTML5Test Comparison Between Browsers" title="HTML5Test Comparison Between Browsers"/></a>
-				<figcaption>
-					A notepad app running on a Google Chromebook. 
-				</figcaption>
+					<!--Fix for Project 1: WebP image converted to standard PNG image. Should be viewable in any browser now.-->
+					<a href="images/notepad.png"><img src="images/notepad.png" alt="Notepad App for ChromeOS" title="Notepad App for ChromeOS"/></a>
+					<figcaption>
+						A notepad app running on a Google Chromebook. 
+					</figcaption>
 				</figure>
 
 				<h2>Okay, How Do I Make Them?</h2>
 				<p>Easy. Just use HTML5, CSS3, and JavaScript. There's plenty of things you can do with the flexible JavaScript API. Chrome even has its own developer app, <a href="#">Chrome Dev Editor</a>, to assist you in making Chrome Apps that work on any desktop/laptop computer. Efforts are even being made to get Chrome Apps on Android and iOS.</p>
 
 				<figure>
-				<a href="images/deveditor.webp"><img src="images/deveditor.webp" alt="HTML5Test Comparison Between Browsers" title="HTML5Test Comparison Between Browsers"/></a>
-				<figcaption>
-					Chrome Dev Editor, an absolute <em>must</em> for Chrome App developers.
-				</figcaption>
+					<!--Fix for Project 1: WebP image converted to standard PNG image. Should be viewable in any browser now.-->
+					<a href="images/deveditor.png"><img src="images/deveditor.png" alt="Chrome Dev Editor" title="Chrome Dev Editor"/></a>
+					<figcaption>
+						Chrome Dev Editor, an absolute <em>must</em> for Chrome App developers.
+					</figcaption>
 				</figure>
 			</article>
 		</section>

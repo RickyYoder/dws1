@@ -33,11 +33,12 @@ aside#premiumMembershipInfo{
 	right:4em;
 	width:20%;
 	display:block;
-	background:#272822;
+	background:rgba(20,20,20,.8);
 	padding:1em;
+	text-align:center;
 }
 
-section.post{
+#articles{
 	margin-top:2em;
 	width:60%;
 	background:#383933;
@@ -73,15 +74,23 @@ nav{
 	width:79%;
 }
 
+nav ul{
+	list-style-type:none !important;
+}
+
+nav li{
+	display:inline-block;
+}
+
 nav a{
 	margin-right:1.5em;
 }
 
 article{
-
+	/*Specific styling for each article goes here*/
 }
 
-a{
+a,a:link{
 	text-decoration:none;
 	color:#A6E22E;
 	padding-bottom:1px;
@@ -92,6 +101,14 @@ a{
 
 a:hover{
 	border-bottom:2px solid #A6E22E;
+}
+
+a:active{
+	border-bottom:2px solid #A6E22E;
+}
+
+a:visited{
+color:#84C00C;
 }
 
 .mapcol{
