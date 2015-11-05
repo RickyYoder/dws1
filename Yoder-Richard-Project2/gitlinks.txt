@@ -1,2 +1,2 @@
-Branch: https://github.com/RickyYoder/dws1/tree/gh-pages/Yoder-Richard-Project1
-Live Site: http://rickyyoder.github.io/dws1/Yoder-Richard-Project1/
+Branch: https://github.com/RickyYoder/dws1/tree/gh-pages/Yoder-Richard-Project2
+Live Site: http://rickyyoder.github.io/dws1/Yoder-Richard-Project2/
