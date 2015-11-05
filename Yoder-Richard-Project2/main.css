@@ -5,12 +5,12 @@
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
-	font-family:Arial,sans-serif;
+	font-family:"Source Sans Pro",Arial,sans-serif;
 }
 
 html,body{
 	/*Root element styles*/
-	background:#272822;
+	background:#fff url(images/bg.png);
 	color:#fff;
 	width:100%;
 	max-width:1200px;
@@ -23,8 +23,16 @@ html,body{
 header#siteheader,footer#sitefooter{
 	/*The main header and footer to be shown on every page*/
 	width:100%;
-	background:url(images/headerfooter.png);
+	background:rgba(50,50,50,.5);
 	padding:.5em;
+}
+
+#siteheader{
+	border-radius:0 0 4px 4px;
+}
+
+#sitefooter{
+	border-radius:4px 4px 0 0;
 }
 
 aside#premiumMembershipInfo{
@@ -33,9 +41,14 @@ aside#premiumMembershipInfo{
 	right:4em;
 	width:20%;
 	display:block;
-	background:rgba(20,20,20,.8);
+	background:rgb(20,20,20);
 	padding:1em;
 	text-align:center;
+	border-radius:0 0 4px 4px;
+
+	-webkit-box-shadow:2px 2px 4px #555;
+	-moz-box-shadow:2px 2px 4px #555;
+	box-shadow:2px 2px 4px #555;
 }
 
 #articles{
@@ -43,6 +56,7 @@ aside#premiumMembershipInfo{
 	width:60%;
 	background:#383933;
 	padding:.5em;
+	border-radius:6px;
 }
 
 header.article{
@@ -64,9 +78,10 @@ article img{
 #logo{
 	/*Our text-based logo*/
 	font-size:2em;
-	color:orange;
+	color:#fff;
 	width:20%;
 	display:inline-block;
+	font-weight:bold;
 }
 
 nav{
