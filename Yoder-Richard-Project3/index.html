@@ -13,20 +13,26 @@
 			<nav>
 				<!--Fix for Project 1: all navigation links are now in a bulleted list-->
 				<ul>
-					<li><a data-smoothScroll href="index.html">Homepage</a></li>
-					<li><a data-smoothScroll href="#html">HTML</a></li>
-					<li><a data-smoothScroll href="#css">CSS</a></li>
-					<li><a data-smoothScroll href="#javascript">JavaScript</a></li>
-					<li><a data-smoothScroll href="#php">PHP</a></li>
-					<li><a data-smoothScroll href="#contact">Contact</a></li>
-					<li><a data-smoothScroll href="#sitefooter">Sitemap</a></li>
+					<li><a data-scroll href="index.html">Homepage</a></li>
+					<li><a data-scroll href="#html">HTML</a></li>
+					<li><a data-scroll href="#css">CSS</a></li>
+					<li><a data-scroll href="#javascript">JavaScript</a></li>
+					<li><a data-scroll href="#php">PHP</a></li>
+					<li><a data-scroll href="#contact">Contact</a></li>
+					<li><a data-scroll href="#sitefooter">Sitemap</a></li>
 				</ul>
 			</nav>
 		</header>
 
-		<div id="content">
+		<section id="content">
 			<h2 id="html">HTML</h2>
-		</div>
+			
+			<h2 id="css">CSS</h2>
+
+			<h2 id="javascript">JavaScript</h2>
+
+			<h2 id="php">PHP</h2>
+		</section>
 
 		<div id="sidebar">
 			<form>
@@ -34,11 +40,16 @@
 					<legend>Sign In</legend>
 
 					<label>Handle</label> <input type="email" maxlength="60"/><br/>
-					<label>Password</label> <input type="password" maxlength="40"/></fieldset><br/>
+					<label>Password</label> <input type="password" maxlength="40"/><br/>
 
 					<input type="submit" value="Sign in"/>
 				</fieldset>
 			</form>
+
+			<aside id="premiumMembershipInfo">
+				<p>Sign up for premium today and get access to hundreds of videos to help you learn faster.</p>
+				<h3><a href="#">Only $5 a month</a></h3>
+			</aside>
 		</div>
 
 		<footer id="sitefooter">
