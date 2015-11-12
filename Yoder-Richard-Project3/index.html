@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width"/>
+		<link rel="stylesheet" href="css/main.css"/>
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+		<title>Learn to Code</title>
+	</head>
+	<body>
+		<header id="siteheader">
+			<h1 id="logo">&lt; /&gt; Coding</h1>
+			<nav>
+				<!--Fix for Project 1: all navigation links are now in a bulleted list-->
+				<ul>
+					<li><a data-smoothScroll href="index.html">Homepage</a></li>
+					<li><a data-smoothScroll href="#html">HTML</a></li>
+					<li><a data-smoothScroll href="#css">CSS</a></li>
+					<li><a data-smoothScroll href="#javascript">JavaScript</a></li>
+					<li><a data-smoothScroll href="#php">PHP</a></li>
+					<li><a data-smoothScroll href="#contact">Contact</a></li>
+					<li><a data-smoothScroll href="#sitefooter">Sitemap</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="content">
+			<h2 id="html">HTML</h2>
+		</div>
+
+		<div id="sidebar">
+			<form>
+				<fieldset>
+					<legend>Sign In</legend>
+
+					<label>Handle</label> <input type="email" maxlength="60"/><br/>
+					<label>Password</label> <input type="password" maxlength="40"/></fieldset><br/>
+
+					<input type="submit" value="Sign in"/>
+				</fieldset>
+			</form>
+		</div>
+
+		<footer id="sitefooter">
+			<h2>Sitemap</h2>
+			<div class="mapcol">
+				<h3>Tutorials</h3>
+				<ul>
+					<li><a href="#a">HTML</a></li>
+					<li><a href="#b">CSS</a></li>
+					<li><a href="#c">JavaScript</a></li>
+					<li><a href="#d">PHP</a></li>
+					<li><a href="#e">SQL</a></li>
+				</ul>
+			</div>
+			<div class="mapcol">
+				<h3>About</h3>
+				<ul>
+					<li><a href="#i">About</a></li>
+					<li><a href="#j">Contact</a></li>
+				</ul>
+			</div>
+			<div class="mapcol">
+				<h3>Social Media</h3>
+				<ul>
+					<li><a href="#k">Facebook</a></li>
+					<li><a href="#l">Twitter</a></li>
+					<li><a href="#m">Google+</a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<script src="js/smooth-scroll-master/smooth-scroll.js"></script>
+		<script src="js/ace/src/ace.js"></script>
+		<script>
+			smoothScroll.init();
+		</script>
+	</body>
+</html>
