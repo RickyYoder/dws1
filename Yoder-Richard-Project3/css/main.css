@@ -123,6 +123,14 @@ color:#84C00C;
 	text-shadow:0 0 2px #000;
 }
 
+.editor{
+	display:block;
+	width:100%;
+	height:300px;
+	font-size:1em !important;
+	margin:1em 0;
+}
+
 #sidebar{
 	width:25%;
 	float:right;
@@ -137,10 +145,18 @@ color:#84C00C;
 }
 
 @media(max-width:699px){
+	/*For smaller devices*/
+
+
+	/*convert to single column*/
 	#content{
 		display:block;
 		float:none;
 		width:100%;
+	}
+
+	.editor{
+		width:90%;
 	}
 
 	#sidebar{
@@ -166,6 +182,8 @@ color:#84C00C;
 		margin:0 auto;
 	}
 
+
+	/*add a bit of extra space between navigation links*/
 	nav li{
 		margin-bottom:10px;
 	}
