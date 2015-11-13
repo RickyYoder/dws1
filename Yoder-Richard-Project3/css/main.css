@@ -104,16 +104,16 @@ a,a:link{
 	border-bottom:2px solid transparent;
 }
 
+a:visited{
+color:#84C00C;
+}
+
 a:hover{
 	border-bottom:2px solid #A6E22E;
 }
 
 a:active{
 	border-bottom:2px solid #A6E22E;
-}
-
-a:visited{
-color:#84C00C;
 }
 
 /*Site content*/
