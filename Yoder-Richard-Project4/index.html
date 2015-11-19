@@ -259,6 +259,30 @@ for(var x = 0; x &lt; editors.length; x++){
 	echo("Hello, world!");
 ?&gt;</div>
 			</section>
+
+			<section id="contact" style="max-width:700px;">
+				<h2>Contact Us</h2>
+				<form>
+					<label>Name</label> <input type="text" placeholder="John Doe" required/>
+
+					<label>Email</label> <input type="email" required/>
+
+					<label>Reason For Contact</label> 
+					<select>
+						<option>-Choose-</option>
+						<option>I can't access my account</option>
+						<option>I am having trouble making a payment</option>
+						<option>I would like to cancel membership</option>
+						<option>General Question/Inquiry</option>
+					</select>
+					<br/>
+
+					<label>Message</label>
+					<textarea required></textarea>
+
+					<input type="submit" value="Send Message" style="margin-left:4em"/>
+				</form>
+			</section>
 		</div>
 
 		<div id="sidebar">
@@ -266,9 +290,10 @@ for(var x = 0; x &lt; editors.length; x++){
 				<fieldset>
 					<legend>Sign In</legend>
 
-					<label>Handle</label> <input type="email" maxlength="60"/><br/>
-					<label>Password</label> <input type="password" maxlength="40"/><br/>
+					<label>Handle</label> <input type="email" maxlength="60" placeholder="Email/Username" required/><br/>
+					<label>Password</label> <input type="password" maxlength="40" placeholder="Shhh...Password" required/><br/>
 
+					<label>Remember Me</label><input type="checkbox"/>
 					<input type="submit" value="Sign in"/>
 				</fieldset>
 			</form>

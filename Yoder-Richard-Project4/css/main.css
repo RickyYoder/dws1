@@ -17,7 +17,6 @@ html,body{
 	height:100%;
 	margin:0 auto;
 	padding:0;
-	font-size:1em;
 }
 
 /*Site navigation*/
@@ -138,9 +137,17 @@ a:active{
 	float:right;
 }
 
-fieldset{
+form{
+	color:#eee;
+	margin:4px;
 	background:#555;
 	border:2px solid #777;
+	padding:2px;
+	text-align:left;
+}
+
+fieldset{
+	border:0;
 }
 
 legend{
@@ -149,17 +156,44 @@ legend{
 	text-align:center;
 }
 
-label{
-	/*form labels*/
-	text-align:right;
+label, input {
+    display: inline-block;
 }
 
-[type=text]{
+label {
+	vertical-align:top;
+    width: 33%;
+    text-align: right;
+}
+
+label + input {
+    margin: 0 30% 0 4%;
+}
+input + input {
+    float: right;
+}
+
+[type=text],[type=email],[type=password]{
 	/*text inputs*/
 	border:1px solid #000;
 	border-radius:2px;
 	padding:.2em;
 	margin:4px;
+	width:60%;
+	display:inline-block;
+	max-width:320px;
+}
+
+textarea{
+	display:inline-block;
+	width:400px;
+	height:6em;
+	line-height:1em;
+}
+
+input:focus,textarea:focus{
+	border:2px solid #000;
+	background:#eff;
 }
 
 [type=submit]{
@@ -169,6 +203,12 @@ label{
 	border:0;
 	margin:4px;
 	padding:.5em 2em;
+}
+
+[type=submit]:hover{
+	background:#fff;
+	color:#111;
+	cursor:pointer;
 }
 
 .mapcol{
