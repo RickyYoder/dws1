@@ -1,0 +1,225 @@
+/*CSS Document*/
+
+*{
+	/*Global styles*/
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	font-family:"Source Sans Pro",Arial,sans-serif;
+}
+
+html,body{
+	/*Root element styles*/
+	background:#fff url(../images/bg.png);
+	color:#fff;
+	width:100%;
+	max-width:1200px;
+	height:100%;
+	margin:0 auto;
+	padding:0;
+	font-size:1em;
+}
+
+/*Site navigation*/
+
+header#siteheader,footer#sitefooter{
+	/*The main header and footer to be shown on every page*/
+	width:100%;
+	background:rgba(20,20,20,.45);
+	padding:.5em;
+	clear:both;
+}
+
+#siteheader{
+	border-radius:0 0 4px 4px;
+}
+
+#sitefooter{
+	border-radius:4px 4px 0 0;
+}
+
+#premiumMembershipInfo{
+	display:block;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+	background: #45484d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #45484d 0%, #000000 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #45484d 0%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+
+	padding:1em;
+	text-align:center;
+	border-radius:4px;
+
+	-webkit-box-shadow:2px 2px 4px #555;
+	-moz-box-shadow:2px 2px 4px #555;
+	box-shadow:2px 2px 4px #555;
+	margin:1em 0;
+}
+
+#premiumMembershipInfo h3{
+	font-style:italic;
+}
+
+#logo{
+	/*Our text-based logo*/
+	font-size:2em;
+	color:#fff;
+	width:20%;
+	display:inline-block;
+	font-weight:bold;
+	text-shadow:2px 2px 2px #111;
+}
+
+nav{
+	display:inline-block;
+	width:79%;
+	border:4px solid #999;
+	background:#555;
+}
+
+nav ul{
+	list-style-type:none;
+}
+
+nav li{
+	display:inline-block;
+	line-height:1em;
+}
+
+nav a{
+	margin-right:1.5em;
+}
+
+a,a:link{
+	text-decoration:none;
+	color:#A6E22E;
+	padding-bottom:1px;
+	display:inline-block;
+	margin-bottom:4px;
+	border-bottom:2px solid transparent;
+}
+
+a:visited{
+color:#84C00C;
+}
+
+a:hover{
+	border-bottom:2px solid #A6E22E;
+}
+
+a:active{
+	border-bottom:2px solid #A6E22E;
+}
+
+/*Site content*/
+#content{
+	float:left;
+	width:75%;
+	text-shadow:0 0 2px #000;
+}
+
+.screenshot{
+	width:320px;
+	height:240px;
+}
+
+.editor{
+	display:block;
+	width:98%;
+	height:300px;
+	/* !important has to be used to override default font size */
+	font-size:1em !important;
+	margin:1em 0;
+}
+
+#sidebar{
+	width:25%;
+	float:right;
+}
+
+fieldset{
+	background:#555;
+	border:2px solid #777;
+}
+
+legend{
+	background:#666;
+	width:40%;
+	text-align:center;
+}
+
+label{
+	/*form labels*/
+	text-align:right;
+}
+
+[type=text]{
+	/*text inputs*/
+	border:1px solid #000;
+	border-radius:2px;
+	padding:.2em;
+	margin:4px;
+}
+
+[type=submit]{
+	/*submit button*/
+	background:#000;
+	color:#fff;
+	border:0;
+	margin:4px;
+	padding:.5em 2em;
+}
+
+.mapcol{
+	/*Sitemap columns*/
+	width:33%;
+	display:inline-block;
+	vertical-align:top;
+	padding-left:2em;
+}
+
+@media(max-width:699px){
+	/*For smaller devices*/
+
+
+	/*convert to single column*/
+	#content{
+		display:block;
+		float:none;
+		width:100%;
+	}
+
+	.editor{
+		width:90%;
+	}
+
+	#sidebar{
+		display:block;
+		float:none;
+		width:100%;
+	}
+
+	.mapcol{
+		width:100%;
+		display:block;
+	}
+
+	#logo{
+		display:block;
+		margin:.5em auto;
+		width:100%;
+		text-align:center;
+	}
+
+	nav{
+		display:block;
+		margin:0 auto;
+	}
+
+
+	/*add a bit of extra space between navigation links*/
+	nav li{
+		margin-bottom:10px;
+	}
+}
