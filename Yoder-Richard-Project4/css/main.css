@@ -119,16 +119,14 @@ a:active{
 }
 
 .screenshot{
-	width:320px;
-	height:240px;
+	width:240px;
+	height:120px;
 }
 
 .editor{
 	display:block;
 	width:98%;
 	height:300px;
-	/* !important has to be used to override default font size */
-	font-size:1em !important;
 	margin:1em 0;
 }
 
@@ -261,5 +259,9 @@ input:focus,textarea:focus{
 	/*add a bit of extra space between navigation links*/
 	nav li{
 		margin-bottom:10px;
+	}
+
+	textarea{
+		width:100%;
 	}
 }
